@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    
+
+}
+
+:root{
+    --main-bg-color: blue;
+}
+   
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+header{
+    background: var(--main-bg-color);
+    /* height: 10vh; */
+    font-fAmily: 'Roboto', sans-serif;
+
+}
+
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    padding: 0 20px;
+}
+
+
+nav ul{
+    height:  50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    padding:  0px 30px;
+}
+nav ul li a {
+    color: wheat;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold ;
+    /* font-size: 20px; */
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin: 0 50px  0 240px;
+
+}
+.search input{
+    width: 30vw;
+    border-radius: 5px;
+    height: 25px;
+    margin: 0 30px 0 0;
+    /* background-color: lightblue; */
+    font-weight: bold;
+    padding: 0 11px;
+}
+
+.button{
+   padding: 4px 11px ;
+   background:var(--main-bg-color);
+   color: white;
+   border: white 2px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    font-fAmily: 'Roboto', sans-serif;
+
+}
+.button:hover{
+    font-weight: bold;
+    padding: 4px 10px;
+}
+
+.container{
+    min-height: calc(100vh - 80px - 10vh );
+}
+.slider{
+    margin: auto;
+    width: 80vw;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.cards{
+    display: flex;
+    overflow: hidden;
+    
+   
+}
+.card
+{
+    max-width: 85vw;
+    margin: auto;
+    background-color: lightgray;
+    overflow: scroll;
+    
+}
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+.card h2{
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+    
+}
+
+footer{
+    height: 10vh;
+    background-color: var(--main-bg-color);
+    color: wheat;
+    font-fAmily: 'Roboto', sans-serif;
+}
